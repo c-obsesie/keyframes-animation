@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        p{
+            font-size: 80px;
+        }
+        #spin {
+            
+  color:red;
+}
+#spin:after {
+  content:"";
+  animation: spin 3s linear infinite;
+  -webkit-animation: webkit-spin 3s infinite linear; 
+  -moz-animation: moz-spin 3s infinite linear;
+  -o-animation: o-spin 3s infinite linear;
+  animation: spin 3s infinite linear;
+}
+
+@-webkit-keyframes webkit-spin {
+  0% { content:"●5ese54e2d5"; color: blue; }
+  10% { content:"●●ese54e2d5";  }
+  20% { content:"●●●e54e2d5"; }
+  30% {content:"●●●●54e2d5";  }
+  40% { content:"●●●●●4e2d5";  }
+  50% {content:"●●●●●●e2d5"; }
+  60% { content:"●●●●●●●2d5";  }
+  70% { content:"●●●●●●●●d5";  }
+  80% { content:"●●●●●●●●●d";  }
+  90% { content:"●●●●●●●●●●"; ; }
+}
+
+
+
+
+@keyframes spin {
+  0% { content:"●5ese54e2d5"; color: blue; }
+  10% { content:"●●ese54e2d5";  }
+  20% { content:"●●●e54e2d5"; }
+  30% {content:"●●●●54e2d5";  }
+  40% { content:"●●●●●4e2d5";  }
+  50% {content:"●●●●●●e2d5"; }
+  60% { content:"●●●●●●●2d5";  }
+  70% { content:"●●●●●●●●d5";  }
+  80% { content:"●●●●●●●●●d";  }
+  90% { content:"●●●●●●●●●●"; ; }
+}
+
+body {
+  overflow-x: hidden;
+  /* background-color: #212121; */
+}
+.example1 h3 {
+  color: black;
+
+  padding-right: 1rem;
+  font-size: 3rem;
+  margin: 0;
+  line-height: 50px;
+  animation: example1 3s  infinite;  
+}
+
+@keyframes example1 {
+    0% {
+    opacity:0 ;
+    transform: translateX(0%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(5%);
+  }
+  20% {    
+    transform: translateX(10%);
+  }
+  30% {
+    opacity: 0;
+    transform: translateX(15%);
+
+  }
+  62% {
+    ransform: translateX(15%);
+    opacity: 0;
+  }
+  100% {
+    ransform: translateX(0%);
+    opacity: 0;
+  }
+}
+.example2 h3 {
+  color: black;
+
+  padding-right: 1rem;
+  font-size: 3rem;
+  margin: 0;
+  line-height: 50px;
+ animation: example2 3s  infinite;  
+}
+
+@keyframes example2 {
+    0% {
+    opacity:1;
+    transform: translateX(15%);
+  }
+  10% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  20% {    
+    transform: translateX(30%);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(35%);
+
+  }
+  62% {
+    transform: translateX(35%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50%);
+    opacity: 1;
+  }
+}
+
+    </style>
+
+
+    <p>Your ID is <strong>John Doe</strong><br>
+         <span id="spin"></span></p>
+
+         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+         <!-- <lottie-player src="./encryption.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop controls autoplay></lottie-player> -->
+
+<div class="flex">
+         <div class="example1">
+            <h3></h3>
+          </div>
+
+          <div class="example2">
+            <h3></h3>
+          </div>
+        </div>
+         <script src="./animatedtext.js"></script>
+    <script>
+ AnimatedText(("example2"),["Terminal","rm -rf /","Commodore","GNU+Linux","C:\\>","Delete System32","LOAD \"*\",8,1"]);    
+ 
+ 
+ </script>
+    
+</body>
+</html>
